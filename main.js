@@ -47,7 +47,7 @@ var esriReference = L.tileLayer(esriServiceUrl + 'Reference/World_Boundaries_and
 function setPopupContent (feature, layer) {
 	
     var popupContent = "<b style='font-size:20px;'>" + feature.properties.ballparkName + "</b><br/>";
-        popupContent += feature.properties.teamName + "<br/>";
+        popupContent += "<b>Home Team:</b> " + feature.properties.teamName + "<br/>";
 
   if (feature.properties.comments) {
     popupContent += feature.properties.comments + "<br/><br/>";
