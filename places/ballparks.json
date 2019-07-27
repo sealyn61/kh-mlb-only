@@ -29,7 +29,6 @@
         "teamName": "Atlanta Braves",
         "ballparkName": "SunTrust Park",
         "visited": "N/A",
-        "comments": "fart on this"
       }
     },
     {
@@ -254,6 +253,7 @@
       "properties": {
         "teamName": "Minnesota Twins",
         "ballparkName": "Target Field",
+        "visitingteamName": "Richfield Spartans hahaha",
         "visited": "DUH!",
         "comments": "here is where i want comments to show dammit!"
       }
