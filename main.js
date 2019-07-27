@@ -48,7 +48,8 @@ function setPopupContent (feature, layer) {
 	
     var popupContent = "<b style='font-size:20px;'>" + feature.properties.ballparkName + "</b><br/>";
         popupContent += "<b>Home Team:</b> " + feature.properties.teamName + "<br/>";
-
+        popupContent += "<b>Visitors:</b> " + feature.properties.vistingteamName + "<br/>";
+	
   if (feature.properties.comments) {
     popupContent += feature.properties.comments + "<br/><br/>";
   }
