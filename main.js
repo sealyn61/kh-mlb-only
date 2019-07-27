@@ -49,15 +49,16 @@ function setPopupContent (feature, layer) {
     var popupContent = "<b style='font-size:20px;'>" + feature.properties.ballparkName + "</b><br/>";
         popupContent += "<b>Home Team:</b> " + feature.properties.teamName + "<br/>";
         popupContent += "<b>Visitors:</b> " + feature.properties.vistingteamName + "<br/>";
+	popupContent += "<b>Score:</b> " + feature.properties.score + "<br/>";	
 	
   if (feature.properties.comments) {
-    popupContent += feature.properties.comments + "<br/><br/>";
+    popupContent += "<br/>" + feature.properties.comments + "<br/>";
   }
   
   if (feature.properties.visited) {
-    popupContent += "<b>Last visited:</b> " + feature.properties.visited + "<br/>";
+    popupContent += "<b>Game Date:</b> " + feature.properties.visited + "<br/>";
     if (feature.properties.ballparkName) {
-      if (feature.properties.visited != 'N/A' && feature.properties.visited != 'Planned' && feature.properties.visited != 'Kitty only' && feature.properties.visited != 'Eric only') {
+      if (feature.properties.visited != 'N/A' && feature.properties.visited != 'Planned') {
         visitedMLBparks = visitedMLBparks + 1;
       } else if (feature.properties.visited === 'Planned') {
         plannedMLBparks = plannedMLBparks + 1;
