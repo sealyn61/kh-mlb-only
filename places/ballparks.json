@@ -254,7 +254,8 @@
       "properties": {
         "teamName": "Minnesota Twins",
         "ballparkName": "Target Field",
-        "visited": "DUH!"
+        "visited": "DUH!",
+        "comments": "here is where i want comments to show dammit!"
       }
     },
     {
